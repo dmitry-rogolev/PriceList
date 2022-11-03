@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SearchController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get("/", [ WelcomeController::class, "show" ])
+    ->name("welcome");
+
+Route::post("/", [ WelcomeController::class, "store" ])
+    ->name("welcome.store");
+
+Route::post("search", [ SearchController::class, "store" ])
+    ->name("search.store");
+
+Route::post("product/add", [ ProductController::class, "add" ])
+    ->name("product.add");
+
+Route::prefix("product/{product}")->name("product.")->group(function()
+{
+    Route::post("change", [ ProductController::class, "change" ])
+        ->name("change");
+        
+    Route::post("remove", [ ProductController::class, "remove" ])
+        ->name("remove");
 });

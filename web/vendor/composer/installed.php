@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'v9.3.10',
-        'version' => '9.3.10.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '7e2565330db35aba9018c37b714bfdc3886b485b',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -365,12 +365,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'v9.3.10',
-            'version' => '9.3.10.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '7e2565330db35aba9018c37b714bfdc3886b485b',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
@@ -398,6 +398,15 @@
             'install_path' => __DIR__ . '/../laravel/sanctum',
             'aliases' => array(),
             'reference' => 'b71e80a3a8e8029e2ec8c1aa814b999609ce16dc',
+            'dev_requirement' => false,
+        ),
+        'laravel/scout' => array(
+            'pretty_version' => 'v9.4.12',
+            'version' => '9.4.12.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../laravel/scout',
+            'aliases' => array(),
+            'reference' => '83f0027f37dd950d50efe4ecfc84a6eb4a476e15',
             'dev_requirement' => false,
         ),
         'laravel/serializable-closure' => array(
@@ -709,8 +718,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
