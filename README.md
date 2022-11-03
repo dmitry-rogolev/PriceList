@@ -5,6 +5,16 @@
 Развернутый проект:
 https://pricelist.rogolev.blog
 
+## Используемые технологии:
+
+1. HTML&CSS;
+2. Bootstrap 5;
+3. JavaScript;
+4. Vue 3;
+5. PHP;
+6. Laravel;
+7. SQL(MySQL).
+
 ## Задача:
 
 Реализовать простое приложение “Прайс лист продукции”.
