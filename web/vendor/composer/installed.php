@@ -5,11 +5,20 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '7e2565330db35aba9018c37b714bfdc3886b485b',
+        'reference' => 'ffdc2614aa5732dd35bcccaaec66ba0e5f5bc7d5',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
     'versions' => array(
+        'algolia/algoliasearch-client-php' => array(
+            'pretty_version' => '3.3.2',
+            'version' => '3.3.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../algolia/algoliasearch-client-php',
+            'aliases' => array(),
+            'reference' => 'cbd07bc0bb7303ff71e238d2d6284ef8469e1d5a',
+            'dev_requirement' => false,
+        ),
         'brick/math' => array(
             'pretty_version' => '0.10.2',
             'version' => '0.10.2.0',
@@ -370,7 +379,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '7e2565330db35aba9018c37b714bfdc3886b485b',
+            'reference' => 'ffdc2614aa5732dd35bcccaaec66ba0e5f5bc7d5',
             'dev_requirement' => false,
         ),
         'laravel/pint' => array(
